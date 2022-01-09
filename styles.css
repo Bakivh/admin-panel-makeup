@@ -1,0 +1,95 @@
+/* Глобальные переменные */
+:root {
+	--primary-color: #A8A8FF;
+	--primary-color-dark: #8055FF;
+	--primary-font: 'Ubuntu', sans-serif;
+}
+
+
+body {
+	display: flex;
+	flex-direction: column;
+
+	height: 100%;
+  min-height: 100%;
+
+	padding-left: 48px;
+	padding-right: 48px;
+
+	box-shadow: 0px 32px 128px rgba(0, 0, 0, 0.5), 0px 16px 32px rgba(0, 0, 0, 0.34), 0px 8px 8px rgba(0, 0, 0, 0.25);
+}
+
+.header {
+	color: var(--primary-color-dark);
+	background: var(--primary-color);
+
+	flex-basis: 32px;
+	padding: 0px;
+	margin: 32px 0px 32px 0px;
+
+	font-family: var(--primary-font);
+	font-style: normal;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 32px; 
+	letter-spacing: -0.2px;
+}
+
+.filters {
+	flex-basis: 32px;
+	display: flex;
+	border: 2px solid var(--primary-color);
+	padding: 8px 8px 8px 8px;
+}
+
+
+.filters__filter-item {
+	background: var(--primary-color-dark);
+}
+
+.filters__filter-item_filter1 {
+	flex-basis: 256px;
+	flex-shrink: 8;
+	height: 32px;
+}
+
+.filters__filter-item_filter2 {
+	margin-left: 8px;
+	flex-basis: 32px;
+	flex-shrink: 1;
+	height: 32px;
+}
+
+.filters__filter-item_filter3 {
+	margin-left: auto;
+	flex-basis: 32px;
+	flex-shrink: 1;
+	height: 32px;
+}
+
+
+.data-table {
+	display: flex;
+	flex-direction: column;
+	border: 2px solid var(--primary-color-dark);
+	box-sizing: border-box;
+
+	margin-top: 32px;
+  flex: 1;
+}
+
+.data-table__header {
+	background: var(--primary-color-dark);
+	flex-basis: 32px;
+}
+
+.data-table__body {
+	background: var(--primary-color);
+	flex: 1
+}
+
+
+.data-table__footer {
+	background: var(--primary-color-dark);
+	flex-basis: 32px;
+}
