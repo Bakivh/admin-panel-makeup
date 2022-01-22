@@ -9,18 +9,22 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-      <div class=header>
-        Page header
+  <div class=page>
+    <div class="header page__header">
+      Page header
+    </div>
+    <div class=filters>
+      <div class=filters__search>
+        <div class="filters__input filters__primary_color"></div> 
+        <div class="filters__get-filters filters__primary_color"></div>
       </div>
-      <div class=filters>
-        <div class="filters__filter-item filters__filter-item_filter1"></div> <!-- названия фильтров потом переименуем -->
-        <div class="filters__filter-item filters__filter-item_filter2"></div>
-        <div class="filters__filter-item filters__filter-item_filter3"></div>    
-      </div>
-      <div class=data-table>
-        <div class=data-table__header></div>
-        <div class=data-table__body></div>
-        <div class=data-table__footer></div>
-      </div>
+      <div class="filters__refresh filters__primary_color"></div>
+    </div>
+    <div class=data-table>
+      <div class=data-table__header></div>
+      <div class=data-table__body></div>
+      <div class=data-table__footer></div>
+    </div>
+  </div>
 	</body>
 </html>
