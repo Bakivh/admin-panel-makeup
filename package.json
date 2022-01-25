@@ -21,7 +21,7 @@
     "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
       "prettier --write"
     ]
-  },
+  }     ,
   "homepage": "https://github.com/Bakivh/admin-panel-makeup#readme",
   "dependencies": {
     "husky": "^7.0.4",
