@@ -19,7 +19,7 @@
   "pre-commit": [
     "prettier"
   ],
-  "homepage": "https://github.com/Bakivh/admin-panel-makeup#readme",
+  "homepage": "https://github.com/Bakivh/admin-panel-makeup#readme" ,
   "dependencies": {
     "pre-commit": "^1.2.2",
     "prettier": "^2.5.1"
