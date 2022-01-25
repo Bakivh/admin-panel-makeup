@@ -5,7 +5,8 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prettier": "prettier -w ."
+    "prettier": "prettier -w .",
+    "gitadd": "git add ."
   },
   "repository": {
     "type": "git",
@@ -17,9 +18,10 @@
     "url": "https://github.com/Bakivh/admin-panel-makeup/issues"
   },
   "pre-commit": [
-    "prettier"
+    "prettier",
+    "gitadd"
   ],
-  "homepage": "https://github.com/Bakivh/admin-panel-makeup#readme" ,
+  "homepage": "https://github.com/Bakivh/admin-panel-makeup#readme",
   "dependencies": {
     "pre-commit": "^1.2.2",
     "prettier": "^2.5.1"
