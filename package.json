@@ -25,9 +25,6 @@
       "pre-commit": "lint-staged"
     }
   },
-  "pre-commit": [
-    "pre-commit"
-  ],
   "homepage": "https://github.com/Bakivh/admin-panel-makeup#readme",
   "dependencies": {
     "husky": "^4.3.8",
