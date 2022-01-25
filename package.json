@@ -12,16 +12,19 @@
   "bugs": {
     "url": "https://github.com/Bakivh/admin-panel-makeup/issues"
   },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier -w"
+    ]
+  }       ,
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
     }
   },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx,json,css,scss,md}": [
-      "prettier --write"
-    ]
-  }       ,
   "homepage": "https://github.com/Bakivh/admin-panel-makeup#readme",
   "dependencies": {
     "husky": "^7.0.4",
