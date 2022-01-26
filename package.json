@@ -16,7 +16,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx,json,css,scss,md}": [
+    "*.{js,jsx,ts,tsx,json,css,scss,md,html,htm}": [
       "prettier -w"
     ]
   },
