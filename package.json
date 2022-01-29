@@ -1,0 +1,35 @@
+{
+  "name": "admin-panel-makeup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bakivh/admin-panel-makeup.git"
+  },
+  "author": "Nizhade",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bakivh/admin-panel-makeup/issues"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,css,scss,md,html,htm}": [
+      "prettier -w"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "homepage": "https://github.com/Bakivh/admin-panel-makeup#readme",
+  "dependencies": {
+    "husky": "^4.3.8",
+    "lint-staged": "^12.3.1",
+    "pre-commit": "^1.2.2",
+    "prettier": "^2.5.1"
+  }
+}
