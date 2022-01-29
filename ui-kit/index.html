@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../reset.css" />
+    <link rel="stylesheet" href="input.css" />
+    <title>ui-kit</title>
+  </head>
+  <body>
+    <div class="input-space">
+      <div class="input-block">
+        <label>
+          <div class="input-block__label">Дата и время заказа</div>
+          <div class="input-block__input">
+            <input
+              placeholder="Введите"
+              type="datetime"
+              class="input-block__input-text"
+            />
+          </div>
+        </label>
+      </div>
+      <div class="input-block">
+        <label>
+          <div class="input-block__label">Дата и время заказа</div>
+          <div class="input-block__input input-block__input_incorrect">
+            <input
+              placeholder="06.12.2021"
+              type="datetime"
+              class="input-block__input-text input-block__input-text_incorrect"
+            />
+            <img class="input-block__button" src="../icons/x-medium.svg" />
+          </div>
+        </label>
+      </div>
+      <div class="input-block">
+        <label>
+          <div class="input-block__label">Дата и время заказа</div>
+          <div class="input-block__input input-block__input_disabled">
+            <input
+              placeholder="06.12.2021"
+              type="datetime"
+              class="input-block__input-text input-block__input-text_disabled"
+            />
+            <img class="input-block__button" src="../icons/locked.svg" />
+          </div>
+        </label>
+      </div>
+    </div>
+  </body>
+</html>
