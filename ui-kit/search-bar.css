@@ -1,17 +1,22 @@
-.input-space {
+.page {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.search-bar-space {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 
   width: 352px;
-  height: 400px;
+  height: 192px;
   border: 1px dashed #8055ff;
   box-sizing: border-box;
   border-radius: 5px;
 }
 
-.input-block {
+.search-block {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -21,19 +26,7 @@
   height: 32px;
 }
 
-.input-block__label {
-  width: 256px;
-  height: 16px;
-
-  font-family: Ubuntu;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 16px;
-  color: #000000;
-}
-
-.input-block__input {
+.search-block__input {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,16 +38,11 @@
   width: 256px;
   height: 32px;
 
-  margin: 8px 0px;
   flex: none;
 }
 
-.input-block__input:focus-within {
-  border: 1px solid #1518ca;
-}
-
-.input-block__input-text {
-  width: 244px;
+.search-block__input-text {
+  width: 220px;
   height: 16px;
   border: 0;
   background-color: transparent;
@@ -66,43 +54,26 @@
   line-height: 16px;
 }
 
-.input-block__input-text::placeholder {
+.search-block__input-text::placeholder {
   color: #bad8f5;
 }
 
-.input-block__input-text::-webkit-calendar-picker-indicator {
-  display: none;
-  -webkit-appearance: none;
-}
-
-.input-block__input-text:focus {
+.search-block__input-text:focus {
   outline: none;
 }
 
-.input-block__input_incorrect {
-  border: 1px solid #f53152;
+.search-block__input-text_notempty {
+  width: 198px;
 }
 
-.input-block__input_disabled {
-  background: #bad8f5;
-}
-
-.input-block__input-text_incorrect {
-  width: 216px;
-}
-
-.input-block__input-text_disabled {
-  width: 216px;
-}
-
-.input-block__button {
+.search-block__button {
   border: 0;
   background-color: transparent;
+  width: 16px;
   padding: 0;
 }
 
-.input-block__button-icon {
+.search-block__button-icon {
   width: 16px;
   height: 16px;
-  margin: 0px 4px;
 }
