@@ -23,8 +23,6 @@
             <input
               placeholder="Введите"
               type="text"
-              onfocus="(this.type='date')"
-              onblur="(this.type='text')"
               class="input-block__input-text"
             />
           </div>
@@ -35,8 +33,9 @@
           <div class="input-block__label">Дата и время заказа</div>
           <div class="input-block__input input-block__input_incorrect">
             <input
-              value="2021-12-06"
-              type="date"
+              placeholder="ММ.ДД.ГГГГ"
+              value="06.12.2021"
+              type="text"
               class="input-block__input-text input-block__input-text_incorrect"
             />
             <button class="input-block__button">
@@ -53,14 +52,13 @@
           <div class="input-block__label">Дата и время заказа</div>
           <div class="input-block__input input-block__input_disabled">
             <input
-              value="2021-12-06"
-              type="date"
+              placeholder="ММ.ДД.ГГГГ"
+              value="06.12.2021"
+              type="text"
               class="input-block__input-text input-block__input-text_disabled"
               disabled="disabled"
             />
-            <button class="input-block__button">
-              <img class="input-block__button-icon" src="../icons/locked.svg" />
-            </button>
+            <img class="input-block__button-icon" src="../icons/locked.svg" />
           </div>
         </label>
       </div>

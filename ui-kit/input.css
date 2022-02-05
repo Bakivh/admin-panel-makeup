@@ -49,6 +49,10 @@
   flex: none;
 }
 
+.input-block__input:focus-within {
+  border: 1px solid #1518ca;
+}
+
 .input-block__input-text {
   width: 244px;
   height: 16px;
@@ -94,9 +98,11 @@
 .input-block__button {
   border: 0;
   background-color: transparent;
+  padding: 0;
 }
 
 .input-block__button-icon {
   width: 16px;
   height: 16px;
+  margin: 0px 4px;
 }
