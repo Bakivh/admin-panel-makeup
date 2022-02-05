@@ -16,7 +16,6 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-start;
-  padding: 8px 0px;
 
   width: 256px;
   height: 72px;
@@ -32,7 +31,6 @@
   font-size: 13px;
   line-height: 16px;
   color: #000000;
-  margin: 8px 0px;
 }
 
 .input-block__input {
@@ -47,6 +45,7 @@
   width: 256px;
   height: 32px;
 
+  margin: 8px 0px;
   flex: none;
 }
 
@@ -61,6 +60,15 @@
   font-weight: normal;
   font-size: 13px;
   line-height: 16px;
+}
+
+.input-block__input-text::placeholder {
+  color: #bad8f5;
+}
+
+.input-block__input-text::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
 }
 
 .input-block__input-text:focus {
@@ -84,6 +92,11 @@
 }
 
 .input-block__button {
-  width: 24px;
-  height: 24px;
+  border: 0;
+  background-color: transparent;
+}
+
+.input-block__button-icon {
+  width: 16px;
+  height: 16px;
 }
