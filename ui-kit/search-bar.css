@@ -41,6 +41,10 @@
   flex: none;
 }
 
+.search-block__input:focus-within {
+  border: 1px solid #1518ca;
+}
+
 .search-block__input-text {
   width: 220px;
   height: 16px;
