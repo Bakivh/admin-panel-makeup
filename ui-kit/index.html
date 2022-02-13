@@ -12,55 +12,83 @@
     />
     <link rel="stylesheet" href="../reset.css" />
     <link rel="stylesheet" href="input.css" />
+    <link rel="stylesheet" href="search-bar.css" />
     <title>ui-kit</title>
   </head>
   <body>
-    <div class="input-space">
-      <div class="input-block">
-        <label>
-          <div class="input-block__label">Дата и время заказа</div>
-          <div class="input-block__input">
+    <div class="page">
+      <div class="input-space">
+        <div class="input-block">
+          <label>
+            <div class="input-block__label">Дата и время заказа</div>
+            <div class="input-block__input">
+              <input
+                placeholder="Введите"
+                type="text"
+                class="input-block__input-text"
+              />
+            </div>
+          </label>
+        </div>
+        <div class="input-block">
+          <label>
+            <div class="input-block__label">Дата и время заказа</div>
+            <div class="input-block__input input-block__input_incorrect">
+              <input
+                placeholder="ММ.ДД.ГГГГ"
+                value="06.12.2021"
+                type="text"
+                class="input-block__input-text input-block__input-text_incorrect"
+              />
+              <button class="input-block__button">
+                <img
+                  class="input-block__button-icon"
+                  src="../icons/x-medium.svg"
+                />
+              </button>
+            </div>
+          </label>
+        </div>
+        <div class="input-block">
+          <label>
+            <div class="input-block__label">Дата и время заказа</div>
+            <div class="input-block__input input-block__input_disabled">
+              <input
+                placeholder="ММ.ДД.ГГГГ"
+                value="06.12.2021"
+                type="text"
+                class="input-block__input-text input-block__input-text_disabled"
+                disabled="disabled"
+              />
+              <img class="input-block__button-icon" src="../icons/locked.svg" />
+            </div>
+          </label>
+        </div>
+      </div>
+      <div class="search-bar-space">
+        <div class="search-block">
+          <div class="search-block__input">
+            <img class="search-block__button-icon" src="../icons/search.svg" />
             <input
-              placeholder="Введите"
+              placeholder="Номер заказа или ФИО"
               type="text"
-              class="input-block__input-text"
+              class="search-block__input-text"
             />
           </div>
-        </label>
-      </div>
-      <div class="input-block">
-        <label>
-          <div class="input-block__label">Дата и время заказа</div>
-          <div class="input-block__input input-block__input_incorrect">
-            <input
-              placeholder="ММ.ДД.ГГГГ"
-              value="06.12.2021"
-              type="text"
-              class="input-block__input-text input-block__input-text_incorrect"
-            />
-            <button class="input-block__button">
+        </div>
+        <div class="search-block">
+          <div class="search-block__input">
+            <img class="search-block__button-icon" src="../icons/search.svg" />
+            <input value="50744" type="text" class="search-block__input-text" />
+
+            <button class="search-block__button">
               <img
-                class="input-block__button-icon"
+                class="search-block__button-icon"
                 src="../icons/x-medium.svg"
               />
             </button>
           </div>
-        </label>
-      </div>
-      <div class="input-block">
-        <label>
-          <div class="input-block__label">Дата и время заказа</div>
-          <div class="input-block__input input-block__input_disabled">
-            <input
-              placeholder="ММ.ДД.ГГГГ"
-              value="06.12.2021"
-              type="text"
-              class="input-block__input-text input-block__input-text_disabled"
-              disabled="disabled"
-            />
-            <img class="input-block__button-icon" src="../icons/locked.svg" />
-          </div>
-        </label>
+        </div>
       </div>
     </div>
   </body>
