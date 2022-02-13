@@ -28,7 +28,7 @@
 
 .search-block__input {
   display: flex;
-  justify-content: space-between;
+  justify-content: left;
   align-items: center;
   padding: 4px 4px 4px 8px;
   border: 1px solid #459df5;
@@ -46,7 +46,7 @@
 }
 
 .search-block__input-text {
-  width: 220px;
+  width: 198px;
   height: 16px;
   border: 0;
   background-color: transparent;
@@ -56,6 +56,7 @@
   font-weight: normal;
   font-size: 13px;
   line-height: 16px;
+  margin-left: 8px;
 }
 
 .search-block__input-text::placeholder {
