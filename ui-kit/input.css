@@ -3,13 +3,9 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-start;
-
-  width: 256px;
-  height: 32px;
 }
 
 .input-block__label {
-  width: 256px;
   height: 16px;
 
   font-family: Ubuntu;
@@ -32,7 +28,7 @@
   width: 256px;
   height: 32px;
 
-  margin: 8px 0px;
+  margin: 8px 0px 0px 0px;
   flex: none;
 }
 
@@ -51,6 +47,16 @@
   font-weight: normal;
   font-size: 13px;
   line-height: 16px;
+}
+
+.input-block_dropdown {
+  margin-top: 16px;
+}
+.input-block_dropdown .input-block__input {
+  width: 128px;
+}
+.input-block_dropdown .input-block__input-text {
+  width: 112px;
 }
 
 .input-block__input-text::placeholder {
