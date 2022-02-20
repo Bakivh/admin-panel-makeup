@@ -1,147 +1,132 @@
-.button-space {
-  display: grid;
-  grid-template-columns: 180px 180px 180px;
-  grid-gap: 12px;
-
-  width: 576px;
-  height: 376px;
-  border: 1px dashed #8055ff;
-  box-sizing: border-box;
-  border-radius: 5px;
-}
-
-.button-block {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: left;
-
-  margin-left: 48px;
-}
-
-.button-input {
+/* базовые параметры для кнопки */
+.button {
   display: flex;
   justify-content: left;
   align-items: center;
 
-  background: #459df5;
   border-radius: 4px;
   border-width: 0px;
-  border-color: #459df5;
 
-  height: 32px;
   width: min-content;
 }
 
-.button-input:hover {
+/* базовые параметры для иконки в кнопке */
+.button > .button__icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* базовые параметры для текста в кнопке */
+.button > .button__text {
+  font-family: Ubuntu;
+  font-style: normal;
+
+  white-space: nowrap;
+}
+
+/* большой размер и все паддинги марджины зависящие от него */
+.button_size-big {
+  height: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.button_size-big.button_icon-only {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.button_size-big > .button__icon + .button__text {
+  margin-left: 8px;
+}
+
+/* маленький размер и все паддинги марджины зависящие от него */
+.button_size-small {
+  height: 24px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.button_size-small.button_icon-only {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.button_size-small > .button__icon + .button__text {
+  margin-left: 4px;
+}
+
+/* цветовая схема обычная */
+.button_theme-regular {
+  background: #459df5;
+}
+
+.button_theme-regular:hover {
   background: #3490ec;
 }
 
-.button-input:active {
+.button_theme-regular:active {
   background: #1271d1;
 }
 
-.button-input > .button-input__button-icon {
-  margin-left: 16px;
-  width: 16px;
-  height: 16px;
+.button_theme-regular > .button__icon {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='none' stroke='%23FFFFFF' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.50251 7.5V8.5C2.50251 10.75 4.75251 13.5 8.00251 13.5C10 13.5 11.6187 12.5 12.6 11' fill='none'/%3E%3Cpath d='M13.5 8.5V7.5C13.5 5.25 11.25 2.5 7.99997 2.5C6 2.5 4.38135 3.5 3.4 5' fill='none'/%3E%3Cpath d='M4.5 9.5L2.50254 7.5L0.752533 9.75' fill='none'/%3E%3Cpath d='M11.5 6.5L13.5 8.5L15.25 6.25' fill='none'/%3E%3C/svg%3E");
 }
 
-.button-input > .button-input__button-text {
-  font-family: Ubuntu;
-  font-style: normal;
+.button_theme-regular > .button__text {
   font-weight: 400;
   font-size: 13px;
   line-height: 16px;
 
   color: #ffffff;
-  white-space: nowrap;
-
-  margin-left: 8px;
-  margin-right: 16px;
 }
 
-.button-input_no-icon > .button-input__button-icon {
-  position: absolute;
-  z-index: -1;
-  opacity: 0;
-}
-
-.button-input_no-icon > .button-input__button-text {
-  margin-left: 16px;
-}
-
-.button-input_icon-only > .button-input__button-icon {
-  margin-left: 8px;
-  margin-right: 8px;
-}
-
-.button-input_icon-only > .button-input__button-text {
-  position: absolute;
-  z-index: -1;
-  opacity: 0;
-}
-
-.button-input_small {
-  height: 24px;
-}
-
-.button-input_small > .button-input__button-icon {
-  margin-left: 8px;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='none' stroke='%23FFFFFF' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.50251 7.5V8.5C2.50251 10.75 4.75251 13.5 8.00251 13.5C10 13.5 11.6187 12.5 12.6 11' fill='none'/%3E%3Cpath d='M13.5 8.5V7.5C13.5 5.25 11.25 2.5 7.99997 2.5C6 2.5 4.38135 3.5 3.4 5' fill='none'/%3E%3Cpath d='M4.5 9.5L2.50254 7.5L0.752533 9.75' fill='none'/%3E%3Cpath d='M11.5 6.5L13.5 8.5L15.25 6.25' fill='none'/%3E%3C/svg%3E");
-}
-
-.button-input_small > .button-input__button-text {
-  margin-left: 4px;
-  margin-right: 8px;
-}
-
-.button-input_no-icon.button-input_small > .button-input__button-text {
-  margin-left: 8px;
-}
-
-.button-input_icon-only.button-input_small > .button-input__button-icon {
-  margin-left: 4px;
-  margin-right: 4px;
-}
-
-.button-input_light-theme {
+/* цветовая схема светлая */
+.button_theme-light {
   background: transparent;
 }
 
-.button-input_light-theme:hover {
+.button_theme-light:hover {
   background: #c6e2ff;
 }
 
-.button-input_light-theme:active {
+.button_theme-light:active {
   background: #51a8ff;
 }
 
-.button-input_contrast-theme {
-  background: transparent;
-}
-
-.button-input_contrast-theme:hover {
-  background: #c7c7c7;
-}
-
-.button-input_contrast-theme:active {
-  background: #6d6d6d;
-}
-
-.button-input_light-theme > .button-input__button-text {
-  color: #459df5;
-}
-
-.button-input_light-theme > .button-input__button-icon {
+.button_theme-light > .button__icon {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='none' stroke='%23459DF5' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.50251 7.5V8.5C2.50251 10.75 4.75251 13.5 8.00251 13.5C10 13.5 11.6187 12.5 12.6 11' fill='none'/%3E%3Cpath d='M13.5 8.5V7.5C13.5 5.25 11.25 2.5 7.99997 2.5C6 2.5 4.38135 3.5 3.4 5' fill='none'/%3E%3Cpath d='M4.5 9.5L2.50254 7.5L0.752533 9.75' fill='none'/%3E%3Cpath d='M11.5 6.5L13.5 8.5L15.25 6.25' fill='none'/%3E%3C/svg%3E");
 }
 
-.button-input_contrast-theme > .button-input__button-text {
-  color: #000000;
+.button_theme-light > .button__text {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+
+  color: #459df5;
 }
 
-.button-input_contrast-theme > .button-input__button-icon {
+/* цветовая схема контрастная */
+.button_theme-contrast {
+  background: transparent;
+}
+
+.button_theme-contrast:hover {
+  background: #c7c7c7;
+}
+
+.button_theme-contrast:active {
+  background: #6d6d6d;
+}
+
+.button_theme-contrast > .button__icon {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='none' stroke='%23000000' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.50251 7.5V8.5C2.50251 10.75 4.75251 13.5 8.00251 13.5C10 13.5 11.6187 12.5 12.6 11' fill='none'/%3E%3Cpath d='M13.5 8.5V7.5C13.5 5.25 11.25 2.5 7.99997 2.5C6 2.5 4.38135 3.5 3.4 5' fill='none'/%3E%3Cpath d='M4.5 9.5L2.50254 7.5L0.752533 9.75' fill='none'/%3E%3Cpath d='M11.5 6.5L13.5 8.5L15.25 6.25' fill='none'/%3E%3C/svg%3E");
+}
+
+.button_theme-contrast > .button__text {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+
+  color: #000000;
 }
