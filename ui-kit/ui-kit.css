@@ -3,19 +3,6 @@
   justify-content: space-evenly;
 }
 
-.input-space {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-
-  width: 352px;
-  height: 400px;
-  border: 1px dashed #8055ff;
-  box-sizing: border-box;
-  border-radius: 5px;
-}
-
 .search-bar-space {
   display: flex;
   flex-direction: column;
@@ -24,6 +11,19 @@
 
   width: 352px;
   height: 192px;
+  border: 1px dashed #8055ff;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.input-space {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  width: 352px;
+  height: 400px;
   border: 1px dashed #8055ff;
   box-sizing: border-box;
   border-radius: 5px;
