@@ -56,22 +56,10 @@
   margin-left: 4px;
 }
 
-/* размер для дропдауна (фиксированная ширина) и все паддинги марджины зависящие от него */
-.button-dropdown {
-  height: 24px;
-  width: 128px;
-
-  margin-top: 16px;
+/* ширина на весь элемент, модификатор */
+.button_width-flexible {
+  width: 100%;
   justify-content: center;
-}
-
-.button-dropdown.button_icon-only {
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-.button-dropdown > .button__icon + .button__text {
-  margin-left: 4px;
 }
 
 /* цветовая схема обычная */
@@ -118,14 +106,6 @@
   line-height: 16px;
 
   color: #459df5;
-}
-
-.button_theme-light.button_highlighted {
-  background: #459df5;
-}
-
-.button_theme-light.button_highlighted > .button__text {
-  color: #ffffff;
 }
 
 .button_theme-light > .button__icon {

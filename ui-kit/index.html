@@ -105,18 +105,15 @@
         </label>
       </div>
       <div class="radio-space">
-        <div class="radio-block">
-          <label class="radio-input">
-            <input type="radio" name="choice" />
-            <span></span>
-          </label>
-        </div>
-        <div class="radio-block">
-          <label class="radio-input">
-            <input type="radio" name="choice" checked="checked" />
-            <span></span>
-          </label>
-        </div>
+        <label class="radio-input">
+          <input type="radio" name="choice" />
+          <span></span>
+        </label>
+
+        <label class="radio-input">
+          <input type="radio" name="choice" checked="checked" />
+          <span></span>
+        </label>
       </div>
     </div>
     <div class="wrapper">
@@ -354,34 +351,34 @@
           </label>
         </div>
         <div class="dropdown">
-          <label class="checkbox-input checkbox-input_text-only">
-            <input type="checkbox" />
-            <span><div class="checkbox-input__text">Новый</div></span>
+          <label class="radio-input radio-input_text-only">
+            <input type="radio" name="dropdown-list" />
+            <span><div class="radio-input__text">Новый</div></span>
           </label>
-          <label class="checkbox-input checkbox-input_text-only">
-            <input type="checkbox" />
-            <span><div class="checkbox-input__text">Расчет</div></span>
+          <label class="radio-input radio-input_text-only">
+            <input type="radio" name="dropdown-list" />
+            <span><div class="radio-input__text">Расчет</div></span>
           </label>
-          <label class="checkbox-input checkbox-input_text-only">
-            <input type="checkbox" checked="checked" />
-            <span><div class="checkbox-input__text">Подтвержден</div></span>
+          <label class="radio-input radio-input_text-only">
+            <input type="radio" name="dropdown-list" checked="checked" />
+            <span><div class="radio-input__text">Подтвержден</div></span>
           </label>
-          <label class="checkbox-input checkbox-input_text-only">
-            <input type="checkbox" />
-            <span><div class="checkbox-input__text">Отложен</div></span>
+          <label class="radio-input radio-input_text-only">
+            <input type="radio" name="dropdown-list" />
+            <span><div class="radio-input__text">Отложен</div></span>
           </label>
-          <label class="checkbox-input checkbox-input_text-only">
-            <input type="checkbox" />
-            <span><div class="checkbox-input__text">Выполнен</div></span>
+          <label class="radio-input radio-input_text-only">
+            <input type="radio" name="dropdown-list" />
+            <span><div class="radio-input__text">Выполнен</div></span>
           </label>
-          <label class="checkbox-input checkbox-input_text-only">
-            <input type="checkbox" />
-            <span><div class="checkbox-input__text">Отменен</div></span>
+          <label class="radio-input radio-input_text-only">
+            <input type="radio" name="dropdown-list" />
+            <span><div class="radio-input__text">Отменен</div></span>
           </label>
         </div>
         <div></div>
-        <div class="dropdown">
-          <div class="input-block input-block_dropdown">
+        <div class="dropdown dropdown_size-short">
+          <div class="input-block input-block_size-short">
             <label>
               <div class="input-block__label">Номер страницы</div>
               <div class="input-block__input">
@@ -394,22 +391,27 @@
             </label>
           </div>
         </div>
-        <div class="dropdown">
+        <div class="dropdown dropdown_size-short">
           <label class="dropdown__label">Удалить n записей?</label>
-          <button class="button button_theme-light button-dropdown">
+          <button
+            class="button button_theme-light button_size-small button_width-flexible"
+          >
             <div class="button__text">Удалить</div>
           </button>
-          <button class="button button_theme-light button-dropdown">
+          <button
+            class="button button_theme-regular button_size-small button_width-flexible"
+          >
             <div class="button__text">Отмена</div>
           </button>
         </div>
-        <div class="dropdown">
+        <div class="dropdown dropdown_size-short">
           <label class="dropdown__label">Выберите тему</label>
-          <button class="button button_theme-light button-dropdown">
+          <button
+            class="button button_theme-light button_size-small button_width-flexible"
+          >
             <svg
               class="button__icon"
               viewBox="0 0 16 16"
-              fill="#459DF5"
               strok="none"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -429,12 +431,11 @@
             <div class="button__text">Светлая</div>
           </button>
           <button
-            class="button button_theme-light button-dropdown button_highlighted"
+            class="button button_theme-regular button_size-small button_width-flexible"
           >
             <svg
               class="button__icon"
               viewBox="0 0 16 16"
-              fill="#FFFFFF"
               stroke="none"
               xmlns="http://www.w3.org/2000/svg"
             >

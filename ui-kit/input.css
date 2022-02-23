@@ -49,13 +49,10 @@
   line-height: 16px;
 }
 
-.input-block_dropdown {
-  margin-top: 16px;
-}
-.input-block_dropdown .input-block__input {
+.input-block_size-short .input-block__input {
   width: 128px;
 }
-.input-block_dropdown .input-block__input-text {
+.input-block_size-short .input-block__input-text {
   width: 112px;
 }
 
