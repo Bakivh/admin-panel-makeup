@@ -11,13 +11,13 @@
 }
 
 /* базовые параметры для иконки в кнопке */
-.button > .button__icon {
+.button__icon {
   width: 16px;
   height: 16px;
 }
 
 /* базовые параметры для текста в кнопке */
-.button > .button__text {
+.button__text {
   font-family: Ubuntu;
   font-style: normal;
 
@@ -95,6 +95,10 @@
   color: #ffffff;
 }
 
+.button_theme-regular > .button__icon {
+  fill: #ffffff;
+}
+
 /* цветовая схема светлая */
 .button_theme-light {
   background: transparent;
@@ -124,6 +128,10 @@
   color: #ffffff;
 }
 
+.button_theme-light > .button__icon {
+  fill: #459df5;
+}
+
 /* цветовая схема контрастная */
 .button_theme-contrast {
   background: transparent;
@@ -143,4 +151,8 @@
   line-height: 16px;
 
   color: #000000;
+}
+
+.button_theme-contrast > .button__icon {
+  fill: #000000;
 }
