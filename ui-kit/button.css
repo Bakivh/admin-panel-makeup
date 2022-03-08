@@ -56,6 +56,12 @@
   margin-left: 4px;
 }
 
+/* ширина на весь элемент, модификатор */
+.button_width-flexible {
+  width: 100%;
+  justify-content: center;
+}
+
 /* цветовая схема обычная */
 .button_theme-regular {
   background: #459df5;
